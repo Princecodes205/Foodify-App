@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <title>Foodify</title>
+  </head>
+
+  <body>
+    <div
+      class="bg-fprimary w-screen h-screen flex flex-col lg:flex-row md:flex-row justify-center items-center relative"
+    >
+      <div
+        class="lg:w-1/2 w-screen lg:h-auto h-full flex flex-col items-center justify-center z-20 bg-re-500"
+      >
+        <div
+          class="flex flex-col space-y-12 w-auto flex-wrap relative h-full lg:h-max md:h-max"
+        >
+          <div
+            class="space-y-6 absolte mt-2 lg:relative md:relative top-0 left0"
+          >
+            <img
+              src="./images/logo.png"
+              alt="logo"
+              class="max-w-xs lg-w-min w-40"
+            />
+            <h1 class="font-bold text-fgrey-10 flex flex-col items-start">
+              <span class="text-5xl">Food for</span>
+              <span class="lg:text-8xl text-6xl">Everyone</span>
+            </h1>
+          </div>
+
+          <a
+            href="./client/login.html"
+            class="text-fprimary bg-fgrey-10 rounded-2xl py-5 font-semibold text-2xl text-center w-auto hover:scale-105 hover:transition-all absolute bottom-[20px] right-0 left-0 lg:relative md:relative"
+          >
+            Get started
+          </a>
+        </div>
+      </div>
+
+      <div
+        class="lg:w-1/2 w-full h-full absolute lg:relative top-0 z-10 overflow-hidden"
+      >
+        <div
+          class="absolute top-0 z-[12px] h-full w-full bg-black opacity-40 hover:opacity-30 hover:transition-all duration-100 ease-out"
+        ></div>
+        <img
+          src="./images/delicious-vietnamese-food-including-pho-ga-noodles-spring-rolls-white-table 1.png"
+          alt="landing image"
+          class="h-full w-full object-cover hover:scale-110 hover:transition-all ease-out duration-150 otate-90"
+        />
+      </div>
+    </div>
+  </body>
+</html>

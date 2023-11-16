@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <title>Foodify-Signup</title>
+  </head>
+  <body class="bg-fgrey-20">
+    <div class="h-screen w-screen flex flex-col bg-fgrey-20 space-y-6">
+      <div
+        class="flex flex-col w-full items-center justify-end h-auto bg-white rounded-b-3xl shadow-xl"
+      >
+        <div class="mb4">
+          <a href="..">
+            <img src="../images/logo.png" alt="" class="max-w-xs w-min" />
+          </a>
+        </div>
+        <div
+          class="mb-4 flex items-center justify-between lg:w-[35%] md:w-1/4 w-4/5 font-semibold text-xl"
+        >
+          <a
+            href="./login.html"
+            class="border-b-0 border-fprimary pb-2 lg:px-8 px-2"
+          >
+            Login
+          </a>
+          <hr class="rotate-90 w-10 bg-fprimary border border-fprimary" />
+          <a href="#" class="border-b-2 border-fprimary pb-2 lg:px-8 px-2">
+            Signup
+          </a>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-full items-center justify-center h-full">
+        <form
+          class="h-auto justify-center bg-rd-500 lg:w-[340px] md:w-[340px] w-4/5 space-y-8"
+        >
+          <div class="relative bg-inherit w-full">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              class="peer bg-transparent h-10 placeholder-transparent w-full border-b-[1px] border-b-black font-semibold outline-none invalid:border-b-red-500"
+              placeholder="FullName"
+              requird
+            />
+            <label
+              for="username"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 transition-all peer-invalid:text-red-500"
+            >
+              FullName
+            </label>
+            <p class="text-red-500 text-sm invisible peer-invalid:visible mt-2">
+              Please Type in your full name
+            </p>
+          </div>
+
+          <div class="relative bg-inherit w-full">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="peer bg-transparent h-10 placeholder-transparent w-fll border-b-[1px] border-b-black font-semibold outline-none invalid:border-b-red-500 w-full invalid:text-red-500"
+              placeholder="email"
+              requird
+            />
+            <label
+              for="email"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 transition-all peer-invalid:text-red-500"
+            >
+              Email Address
+            </label>
+            <p class="text-red-500 text-sm invisible peer-invalid:visible mt-2">
+              Please Type in a valid email address
+            </p>
+          </div>
+
+          <div class="relative bg-inherit w-full">
+            <input
+              type="password"
+              max="7"
+              min="5"
+              id="username"
+              name="username"
+              class="peer bg-transparent h-10 placeholder-transparent w-full border-b-[1px] border-b-black font-semibold outline-none invalid:border-b-red-500"
+              placeholder="password"
+              requird
+            />
+            <label
+              for="password"
+              class="absolute cursor-text left-0 -top-3 text-sm text-gray-500 bg-inherit peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-500 peer-placeholder-shown:top-2 peer-focus:-top-3 transition-all peer-invalid:text-red-500"
+            >
+              Password
+            </label>
+            <p class="text-red-500 text-sm invisible peer-invalid:visible mt-2">
+              Please Type in a password greater than 7 characters
+            </p>
+          </div>
+
+          <div>
+            <a href="./login.html" class="text-fprimary font-semibold">
+              Already have an account? Login
+            </a>
+          </div>
+
+          <div class="w-full">
+            <button
+              type="submit"
+              class="text-white bg-fprimary p-3 px-20 w-full text-2xl rounded-full"
+            >
+              Signup
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
